@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->smallInteger('beds')->nullable()->unsigned();
             $table->smallInteger('bathrooms')->nullable()->unsigned();
             $table->smallInteger('square_meters')->nullable()->unsigned();
-            $table->varchar('address')->nullable();
+            $table->char('address', 50)->nullable();
             $table->decimal('longitude', 11, 8)->nullable();
             $table->decimal('latitude', 10, 8)->nullable();
             $table->decimal('price', 12, 2)->nullable()->unsigned();
