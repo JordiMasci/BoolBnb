@@ -24,7 +24,7 @@ return new class extends Migration {
             $table->decimal('latitude', 10, 8)->nullable();
             $table->decimal('price', 12, 2)->nullable()->unsigned();
             $table->boolean('visible')->nullable()->default(false);
-            $table->text('cover_img');
+            $table->text('cover_img')->nullable();
             $table->timestamps();
         });
     }
